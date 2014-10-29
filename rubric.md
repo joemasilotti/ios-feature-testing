@@ -15,6 +15,7 @@
 ## Frameworks
 
 1. [Frank](http://www.testingwithfrank.com)
+1. [UIAutomation](https://developer.apple.com/library/ios/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/UsingtheAutomationInstrument/UsingtheAutomationInstrument.html)
 1. [Calabash](https://github.com/calabash/calabash-ios)
 1. [KIF](https://github.com/kif-framework/KIF)
 1. [Subliminal](https://github.com/inkling/Subliminal)
