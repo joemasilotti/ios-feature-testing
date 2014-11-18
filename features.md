@@ -5,3 +5,6 @@
 | Standard UIAlertViews | | | | |
 | System UIAlertViews | | | | |
 | Swipe to delete | | | | |
+| iOS 8+ support | | | | |
+| Remote controllers | | | | |
+| Swift support | | | | |
