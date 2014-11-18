@@ -8,3 +8,4 @@
 | iOS 8+ support          | ❔ | | 💚 | |
 | Remote controllers      | ❌ | | ❔ | |
 | Swift support           | ❌ | | ❔ | |
+| Run from CI             | 💚 | |❔ | |
