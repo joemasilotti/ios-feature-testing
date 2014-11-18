@@ -1,5 +1,5 @@
-| Frank | UIAutomation | Subliminal | KIF | Calabash |
-|-------|--------------|------------|-----|----------|
+| Feature | Frank | UIAutomation | Subliminal | KIF | Calabash |
+|---------|-------|--------------|------------|-----|----------|
 | UITableView interaction | | | | |
 | Scrolling UIScrollViews | | | | |
 | Standard UIAlertViews | | | | |
