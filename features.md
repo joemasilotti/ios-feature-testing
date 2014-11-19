@@ -8,6 +8,6 @@
 | WKWebView interaction   | ❌ | 💚 | ❔ | ❌ |  |
 | Swipe to delete         | ❌ | ❌ | ❌ | 💚 |  |
 | iOS 8+ support          | ❔ | 💚 | 💚 | 💚 |  |
-| Remote controllers      | ❌ |    | ❔ | ❔ |  |
+| Remote controllers      | ❌ | 💚 | ❔ | ❔ |  |
 | Swift support           | ❌ |    | ❔ | ❔ |  |
 | Run from CI             | 💚 | 💚 | 💚 | ❔ |  |
