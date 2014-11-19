@@ -2,8 +2,8 @@
 |---------|-------|--------------|------------|-----|----------|
 | UITableView interaction | 💚 | 💚 | ❌ | 💚 |  |
 | Scrolling UIScrollViews | 💚 | 💚 | 💚 | 💚 |  |
-| Standard UIAlertViews   | 💚 |    | ❌ | 💚 |  |
-| System UIAlertViews     | ❌ |    | ❔ | ❔ |  |
+| Standard UIAlertViews   | 💚 | 💚 | ❌ | 💚 |  |
+| System UIAlertViews     | ❌ | 💚 | ❔ | ❔ |  |
 | UIWebView interaction   | ❌ | 💚 | 💚 | 💚 |  |
 | WKWebView interaction   | ❌ |    | ❔ | ❌ |  |
 | Swipe to delete         | ❌ | ❌ | ❌ | 💚 |  |
