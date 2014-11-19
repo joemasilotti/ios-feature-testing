@@ -5,7 +5,7 @@
 | Standard UIAlertViews   | 💚 | 💚 | ❌ | 💚 |  |
 | System UIAlertViews     | ❌ | 💚 | ❔ | ❔ |  |
 | UIWebView interaction   | ❌ | 💚 | 💚 | 💚 |  |
-| WKWebView interaction   | ❌ |    | ❔ | ❌ |  |
+| WKWebView interaction   | ❌ | 💚 | ❔ | ❌ |  |
 | Swipe to delete         | ❌ | ❌ | ❌ | 💚 |  |
 | iOS 8+ support          | ❔ | 💚 | 💚 | 💚 |  |
 | Remote controllers      | ❌ |    | ❔ | ❔ |  |
