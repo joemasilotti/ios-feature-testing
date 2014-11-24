@@ -22,8 +22,6 @@
 | UIKit visibility |  |  |  |  |  |
 | UIActionSheet interaction |  |  |  |  |  |
 | UIPickerView interaction |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
 | Swipe to delete         | ❌ | ❌ | ❌ | 💚 |  |
 
 ## Hybrid Apps
