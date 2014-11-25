@@ -6,19 +6,19 @@
 |---------	|-------	|--------------	|------------	|-----	|----------	|
 | iOS 8+ support          	| 💚 	| 💚 	| 💚 	| 💚 	|   	|
 | Run from CI             	| 💚 	| 💚 	| 💚 	|    	|   	|
-| Animation waiting       	| 💛*	|    	|    	|    	|   	|
+| Animation waiting       	| 💛¹	|    	|    	|    	|   	|
 
 ## UIKit Interactions
 
 | Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
 |---------	|-------	|--------------	|------------	|-----	|----------	|
-| Reading UILabels         	| 💚	| 💚  	|    	|    	|  	|
+| Reading UILabels         	| 💚	| 💚  	| 💚 	| 💚 	|  	|
 | UITableView interaction   	| 💚   	| 💚 	| ❌ 	| 💚 	|  	|
 | Scrolling UIScrollViews  	| 💚   	| 💚 	| 💚 	| 💚 	|  	|
 | Standard UIAlertViews     	| 💚   	| 💚 	| ❌ 	| 💚 	|  	|
-| Typing into UITextFields   	| 💛** 	| 💚  	|  	|  	|  	|
-| Tapping UIControls        	| 💚  	| 💚	|  	| 	|  	|
-| Sliding UISliders         	| 💚 	|  	|  	|  	|  	|
+| Typing into UITextFields   	| 💛² 	| 💚  	| 💚	| 💚	|  	|
+| Tapping UIControls        	| 💚  	| 💚	| 💚	| 💚	|  	|
+| Sliding UISliders         	| 💚 	| ❌	| 💛⁴	| 💚 	|  	|
 | UIKit visibility          	| 💚 	| 💚	| 💚	| 💚	|  	|
 | UIActionSheet interaction 	| 💚 	| 💚 	| 💚 	| 💚 	|  	|
 | UIPickerView interaction  	| 💚 	|  	| 💚 	| 💚 	|  	|
@@ -46,7 +46,7 @@
 |---------	|-------	|--------------	|------------	|-----	|----------	|
 | Objective-C                                 	| ❌ 	| ❌ 	| 💚 	| 💚 	|  	|
 | BDD-style                                   	| 💚 	| ❌  	| ❌ 	| ❌ 	|  	|
-| Can be debugged                            	| 💚 	| ❌  	| 💛***	| 💚 	|  	|
+| Can be debugged                            	| 💚 	| ❌  	| 💛³	| 💚 	|  	|
 | Does not require Instruments.app            	| 💚 	| ❌  	| ❌ 	| 💚 	|  	|
 | Focus tests                                 	| 💚 	|     	| 💚 	| ❌ 	|  	|
 | Cocoapods support                           	| 💚 	| n/a 	| 💚 	| 💚 	|  	|
@@ -58,6 +58,7 @@
 💚 = Full support
 💛 = Support with caveats
 
-* `*` Some animations are handled without interaction, while others require manual waiting.
-* `**` Sometimes Frank is so eager to type, he doesn’t wait for the UITextField to fully focus, leading to dropped characters. Workarounds are possible.
-* `***` Subliminal loops over Objective-C code which calls JavaScript asynchronously via Instruments making debugging possible, but quite difficult.
+* ¹ Some animations are handled without interaction, while others require manual waiting.
+* ² Sometimes Frank is so eager to type, he doesn’t wait for the UITextField to fully focus, leading to dropped characters. Workarounds are possible.
+* ³ Subliminal loops over Objective-C code which calls JavaScript asynchronously via Instruments making debugging possible, but quite difficult.
+* ⁴ Subliminal can slide a slider and successfully call delegate methods, but the computation of the physical nub offsets are left to you.
