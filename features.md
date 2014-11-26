@@ -18,10 +18,10 @@
 | Standard UIAlertViews     	| 💚   	| 💚 	| ❌ 	| 💚 	|  	|
 | Typing into UITextFields   	| 💛² 	| 💚  	| 💚	| 💚	|  	|
 | Tapping UIControls        	| 💚  	| 💚	| 💚	| 💚	|  	|
-| Sliding UISliders         	| 💚 	| ❌	| 💛⁴	| 💚 	|  	|
+| Sliding UISliders         	| 💚 	| ❌	| 💛³	| 💚 	|  	|
 | UIKit visibility          	| 💚 	| 💚	| 💚	| 💚	|  	|
 | UIActionSheet interaction 	| 💚 	| 💚 	| 💚 	| 💚 	|  	|
-| UIPickerView interaction  	| 💚 	| 💛⁵	| 💚 	| 💚 	|  	|
+| UIPickerView interaction  	| 💚 	| 💛⁴	| 💚 	| 💚 	|  	|
 | Swipe to delete           	| ❌ 	| ❌ 	| ❌ 	| 💚 	|  	|
 
 ## Hybrid Apps
@@ -29,15 +29,15 @@
 | Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
 |---------	|-------	|--------------	|------------	|-----	|----------	|
 | UIWebView interaction   	| ❌ 	| 💚 	| 💚 	| 💚 	|  	|
-| WKWebView interaction   	| ❌ 	| 💚 	|    	| ❌ 	|  	|
+| WKWebView interaction   	| ❌ 	| 💚 	| ❌⁵ 	| ❌ 	|  	|
 
 ## External to App
 
 | Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
 |---------	|-------	|--------------	|------------	|-----	|----------	|
-| Remote controllers          	| ❌ 	| 💚 	|  	| ❌ 	|  	|
-| System UIAlertViews        	| ❌ 	| 💚 	|  	| ❌ 	|  	|
-| Backgrounding/foregrounding 	| ❌ 	| 💚 	|  	| 💚 	|  	|
+| Remote controllers          	| ❌ 	| 💚 	| ❌⁵	| ❌ 	|  	|
+| System UIAlertViews        	| ❌ 	| 💚 	| ❌	| ❌ 	|  	|
+| Backgrounding/foregrounding 	| ❌ 	| ❌ 	| ❌	| ❌ 	|  	|
 
 
 ## Developer Niceties
@@ -46,21 +46,27 @@
 |---------	|-------	|--------------	|------------	|-----	|----------	|
 | Objective-C                                 	| ❌ 	| ❌ 	| 💚 	| 💚 	|  	|
 | BDD-style                                   	| 💚 	| ❌  	| ❌ 	| ❌ 	|  	|
-| Can be debugged                            	| 💚 	| ❌  	| 💛³	| 💚 	|  	|
+| Can be debugged                            	| 💚 	| ❌  	| 💛⁶	| 💚 	|  	|
 | Does not require Instruments.app            	| 💚 	| ❌  	| ❌ 	| 💚 	|  	|
 | Focus tests                                 	| 💚 	| ❌    	| 💚 	| ❌ 	|  	|
 | Cocoapods support                           	| 💚 	| n/a 	| 💚 	| 💚 	|  	|
-| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛⁶ 	|  	|
-
-
-
+| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛⁷ 	|  	|
 
 💚 = Full support
 💛 = Support with caveats
 
+### Versions
+
+* Xcode 6.1
+* iOS 8.1
+* Frank 1.2.3
+* Subliminal 1.1.0 - [shared/Xcode6 branch - d99fef4 commit](https://github.com/inkling/Subliminal/commit/d99fef42529589373adc1948aede98aed0fbe9de)
+* KIF - 3.0.8
+
 * ¹ Some animations are handled without interaction, while others require manual waiting.
 * ² Sometimes Frank is so eager to type, he doesn’t wait for the UITextField to fully focus, leading to dropped characters. Workarounds are possible.
-* ³ Subliminal loops over Objective-C code which calls JavaScript asynchronously via Instruments making debugging possible, but quite difficult.
-* ⁴ Subliminal can slide a slider and successfully call delegate methods, but the computation of the physical nub offsets are left to you.
-* ⁵ UIAutomation makes each UIPicker selection on value at a time, making selection very slow. Also, if the date is not selectable UIAutomation will silently fail.
-* ⁶ You can use the [Accessibility Inspector](https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) to identify elements for KIF to interact with, but there isn’t a direct way to view the hierarchy or identify elements which KIF ignores because they are accessibility containers.
+* ³ Subliminal can slide a slider and successfully call delegate methods, but the computation of the physical nub offsets are left to you.
+* ⁴ UIAutomation makes each UIPicker selection on value at a time, making selection very slow. Also, if the date is not selectable UIAutomation will silently fail.\
+* ⁵ Subliminal cannot interact with these elements directly, but can call into UIAutomation’s JavaScripts via `SLTerminal -eval:`.
+* ⁶ Subliminal loops over Objective-C code which calls JavaScript asynchronously via Instruments making debugging possible, but quite difficult.
+* ⁷ You can use the [Accessibility Inspector](https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) to identify elements for KIF to interact with, but there isn’t a direct way to view the hierarchy or identify elements which KIF ignores because they are accessibility containers.
