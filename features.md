@@ -6,7 +6,7 @@
 |---------	|-------	|--------------	|------------	|-----	|----------	|
 | iOS 8+ support          	| 💚 	| 💚 	| 💚 	| 💚 	|   	|
 | Run from CI             	| 💚 	| 💚 	| 💚 	| 💚 	|   	|
-| Animation waiting       	| 💛[¹](#Footnotes)	|    	| 💚  	| 💚  	|   	|
+| Animation waiting       	| 💛[¹](#footnotes)	|    	| 💚  	| 💚  	|   	|
 
 ## UIKit Interactions
 
