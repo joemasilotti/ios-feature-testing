@@ -16,12 +16,12 @@
 | UITableView interaction   	| 💚   	| 💚 	| ❌ 	| 💚 	|  	|
 | Scrolling UIScrollViews  	| 💚   	| 💚 	| 💚 	| 💚 	|  	|
 | Standard UIAlertViews     	| 💚   	| 💚 	| ❌ 	| 💚 	|  	|
-| Typing into UITextFields   	| 💛[²](#Footnotes) 	| 💚  	| 💚	| 💚	|  	|
+| Typing into UITextFields   	| 💛[²](#footnotes) 	| 💚  	| 💚	| 💚	|  	|
 | Tapping UIControls        	| 💚  	| 💚	| 💚	| 💚	|  	|
-| Sliding UISliders         	| 💚 	| ❌	| 💛[³](#Footnotes)	| 💚 	|  	|
+| Sliding UISliders         	| 💚 	| ❌	| 💛[³](#footnotes)	| 💚 	|  	|
 | UIKit visibility          	| 💚 	| 💚	| 💚	| 💚	|  	|
 | UIActionSheet interaction 	| 💚 	| 💚 	| 💚 	| 💚 	|  	|
-| UIPickerView interaction  	| 💚 	| 💛[⁴](#Footnotes)	| 💚 	| 💚 	|  	|
+| UIPickerView interaction  	| 💚 	| 💛[⁴](#footnotes)	| 💚 	| 💚 	|  	|
 | Swipe to delete           	| ❌ 	| ❌ 	| ❌ 	| 💚 	|  	|
 
 ## Hybrid Apps
@@ -29,13 +29,13 @@
 | Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
 |---------	|-------	|--------------	|------------	|-----	|----------	|
 | UIWebView interaction   	| ❌ 	| 💚 	| 💚 	| 💚 	|  	|
-| WKWebView interaction   	| ❌ 	| 💚 	| ❌[⁵](#Footnotes) 	| ❌ 	|  	|
+| WKWebView interaction   	| ❌ 	| 💚 	| ❌[⁵](#footnotes) 	| ❌ 	|  	|
 
 ## External to App
 
 | Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
 |---------	|-------	|--------------	|------------	|-----	|----------	|
-| Remote controllers          	| ❌ 	| 💚 	| ❌[⁵](#Footnotes)	| ❌ 	|  	|
+| Remote controllers          	| ❌ 	| 💚 	| ❌[⁵](#footnotes)	| ❌ 	|  	|
 | System UIAlertViews        	| ❌ 	| 💚 	| ❌	| ❌ 	|  	|
 | Backgrounding/foregrounding 	| ❌ 	| ❌ 	| ❌	| ❌ 	|  	|
 
@@ -46,11 +46,11 @@
 |---------	|-------	|--------------	|------------	|-----	|----------	|
 | Objective-C                                 	| ❌ 	| ❌ 	| 💚 	| 💚 	|  	|
 | BDD-style                                   	| 💚 	| ❌  	| ❌ 	| ❌ 	|  	|
-| Can be debugged                            	| 💚 	| ❌  	| 💛[⁶](#Footnotes)	| 💚 	|  	|
+| Can be debugged                            	| 💚 	| ❌  	| 💛[⁶](#footnotes)	| 💚 	|  	|
 | Does not require Instruments.app            	| 💚 	| ❌  	| ❌ 	| 💚 	|  	|
 | Focus tests                                 	| 💚 	| ❌    	| 💚 	| ❌ 	|  	|
 | Cocoapods support                           	| 💚 	| n/a 	| 💚 	| 💚 	|  	|
-| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁷](#Footnotes) 	|  	|
+| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁷](#footnotes) 	|  	|
 
 💚 = Full support
 💛 = Support with caveats
