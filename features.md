@@ -63,6 +63,8 @@
 * Subliminal 1.1.0 - [shared/Xcode6 branch - d99fef4 commit](https://github.com/inkling/Subliminal/commit/d99fef42529589373adc1948aede98aed0fbe9de)
 * KIF - 3.0.8
 
+### Footnotes
+
 * ¹ Some animations are handled without interaction, while others require manual waiting.
 * ² Sometimes Frank is so eager to type, he doesn’t wait for the UITextField to fully focus, leading to dropped characters. Workarounds are possible.
 * ³ Subliminal can slide a slider and successfully call delegate methods, but the computation of the physical nub offsets are left to you.
