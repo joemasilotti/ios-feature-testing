@@ -48,9 +48,9 @@
 | BDD-style                                   	| 💚 	| ❌  	| ❌ 	| ❌ 	|  	|
 | Can be debugged                            	| 💚 	| ❌  	| 💛[⁶](#footnotes)	| 💚 	|  	|
 | Does not require Instruments.app            	| 💚 	| ❌  	| ❌ 	| 💚 	|  	|
-| Focus tests                                 	| 💚 	| ❌    	| 💚 	| ❌ 	|  	|
+| Focus tests                                 	| 💚 	| ❌    	| 💚 	| 💚[⁷](#footnotes) 	|  	|
 | Cocoapods support                           	| 💚 	| n/a 	| 💚 	| 💚 	|  	|
-| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁷](#footnotes) 	|  	|
+| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁸](#footnotes) 	|  	|
 
 💚 = Full support
 💛 = Support with caveats
@@ -71,4 +71,5 @@
 * ⁴ UIAutomation makes each UIPicker selection on value at a time, making selection very slow. Also, if the date is not selectable UIAutomation will silently fail.\
 * ⁵ Subliminal cannot interact with these elements directly, but can call into UIAutomation’s JavaScripts via `SLTerminal -eval:`.
 * ⁶ Subliminal loops over Objective-C code which calls JavaScript asynchronously via Instruments making debugging possible, but quite difficult.
-* ⁷ You can use the [Accessibility Inspector](https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) to identify elements for KIF to interact with, but there isn’t a direct way to view the hierarchy or identify elements which KIF ignores because they are accessibility containers.
+* ⁷ Tests can be focused in Xcode via tapping the gutter (ala XCTest) but not via the command line.
+* ⁸ You can use the [Accessibility Inspector](https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) to identify elements for KIF to interact with, but there isn’t a direct way to view the hierarchy or identify elements which KIF ignores because they are accessibility containers.
