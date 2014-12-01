@@ -36,7 +36,7 @@
 | Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
 |---------	|-------	|--------------	|------------	|-----	|----------	|
 | Remote controllers          	| ❌ 	| 💚 	| ❌[⁵](#footnotes)	| ❌ 	|  	|
-| System UIAlertViews        	| ❌ 	| 💚 	| ❌	| ❌ 	|  	|
+| System UIAlertViews        	| ❌ 	| 💚 	| 💚	| ❌ 	|  	|
 | Backgrounding/foregrounding 	| ❌ 	| ❌ 	| ❌	| ❌ 	|  	|
 
 
