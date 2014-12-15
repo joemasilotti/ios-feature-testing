@@ -42,7 +42,7 @@ Comparison overview of each of the frameworks' features such as `UIControl` inte
 | Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
 |---------	|-------	|--------------	|------------	|-----	|
 | Remote controllers          	| ❌ 	| 💚 	| ❌[⁵](#footnotes)	| ❌ 	|
-| System UIAlertViews        	| ❌ 	| 💚 	| 💚	| ❌ 	|
+| System UIAlertViews        	| ❌ 	| 💚 	| ❌	| 💚 	|
 | Backgrounding/foregrounding 	| ❌ 	| ❌ 	| ❌	| ❌ 	|
 
 ### Developer Niceties
