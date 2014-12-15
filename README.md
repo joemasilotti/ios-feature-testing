@@ -88,6 +88,19 @@ A more detailed look into the pros and cons of each framework.
 1. Frank is maintained so poorly we have considered forking it and maintaining it on our own. This, however, has improved since iOS 8 has launched.
 1. Frank claims to be able to run on devices but I haven't gotten it to work.
 
+### UIAutomation
+
+1. UIAutomation requires that each level of the view hierarchy be explicitly referenced. For example, to access a button in a scroll view your syntax would look something like `UIATarget.localTarget().frontMostApp().mainWindow().scrollViews[0].buttons()[0]`. This makes your feature tests tied to the implementation of your view hierarchy.
+1. UIAutomation is written in JavaScript. There are a number of wrappers built on top of it to help make it less verbose, such as [bwoken](https://github.com/bendyworks/bwoken) and [tuneup_js](https://github.com/alexvollmer/tuneup_js).
+1. It is possible to run UIAutomation scripts via the command line with the some custom build scripts. The main idea is to inject the JavaScript into the app and then run it via Instruments.
+1. While reliable when running via the GUI and command line, there is a race condition bug in Instruments that occurs on lower-end machines. This makes it particularly difficult to use when running as CI on a Mac Mini.
+1. UIAutomation should be able to cover 99% of all use cases when running on a mobile device. However, a portion of these are broken with the introduction of iOS 7 (and continue to remain broken in iOS 8). These range from basic features such as scrolling views to very complex interactions like putting the app to sleep for five seconds.
+1. Being UIAutomation is from Apple it should be as close to “real” user interaction as possible.
+1. Most of Apple’s documentation exists in the [UI Automation JavaScript Reference](https://developer.apple.com/library/ios/documentation/DeveloperTools/Reference/UIAutomationRef/UIAutomationRef.pdf) pdf.
+1. There is a fair amount of talk online regarding UIAutomation and even a book from Pragmatic Bookshelf, [Test iOS Apps with UI Automation: Bug Hunting Made Easy](https://pragprog.com/book/jptios/test-ios-apps-with-ui-automation), covering how best to use.
+1. Apple owns it and it’s closed source. It doesn’t appear that any updates have occurred since iOS 6.
+1. Works but takes an extra couple of seconds to get installed on the device.
+
 ### KIF
 
 1. All views are interacted with via their accessibility labels. Since KIF traverses the view hierarchy looking for each match, no knowledge the way the views are laid out is needed.
