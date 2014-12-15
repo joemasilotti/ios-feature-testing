@@ -2,55 +2,55 @@
 
 ## Essential
  
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
-|---------	|-------	|--------------	|------------	|-----	|----------	|
-| iOS 8+ support          	| 💚 	| 💚 	| 💚 	| 💚 	|   	|
-| Run from CI             	| 💚 	| 💚 	| 💚 	| 💚 	|   	|
-| Animation waiting       	| 💛[¹](#footnotes)	|    	| 💚  	| 💚  	|   	|
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
+|---------	|-------	|--------------	|------------	|-----	|
+| iOS 8+ support          	| 💚 	| 💚 	| 💚 	| 💚 	|
+| Run from CI             	| 💚 	| 💚 	| 💚 	| 💚 	|
+| Animation waiting       	| 💛[¹](#footnotes)	|    	| 💚  	| 💚  	|
 
 ## UIKit Interactions
 
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
-|---------	|-------	|--------------	|------------	|-----	|----------	|
-| Reading UILabels         	| 💚	| 💚  	| 💚 	| 💚 	|  	|
-| UITableView interaction   	| 💚   	| 💚 	| ❌ 	| 💚 	|  	|
-| Scrolling UIScrollViews  	| 💚   	| 💚 	| 💚 	| 💚 	|  	|
-| Standard UIAlertViews     	| 💚   	| 💚 	| ❌ 	| 💚 	|  	|
-| Typing into UITextFields   	| 💛[²](#footnotes) 	| 💚  	| 💚	| 💚	|  	|
-| Tapping UIControls        	| 💚  	| 💚	| 💚	| 💚	|  	|
-| Sliding UISliders         	| 💚 	| ❌	| 💛[³](#footnotes)	| 💚 	|  	|
-| UIKit visibility          	| 💚 	| 💚	| 💚	| 💚	|  	|
-| UIActionSheet interaction 	| 💚 	| 💚 	| 💚 	| 💚 	|  	|
-| UIPickerView interaction  	| 💚 	| 💛[⁴](#footnotes)	| 💚 	| 💚 	|  	|
-| Swipe to delete           	| ❌ 	| ❌ 	| ❌ 	| 💚 	|  	|
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
+|---------	|-------	|--------------	|------------	|-----	|
+| Reading UILabels         	| 💚	| 💚  	| 💚 	| 💚 	|
+| UITableView interaction   	| 💚   	| 💚 	| ❌ 	| 💚 	|
+| Scrolling UIScrollViews  	| 💚   	| 💚 	| 💚 	| 💚 	|
+| Standard UIAlertViews     	| 💚   	| 💚 	| ❌ 	| 💚 	| 
+| Typing into UITextFields   	| 💛[²](#footnotes) 	| 💚  	| 💚	| 💚	|
+| Tapping UIControls        	| 💚  	| 💚	| 💚	| 💚	|
+| Sliding UISliders         	| 💚 	| ❌	| 💛[³](#footnotes)	| 💚 	|
+| UIKit visibility          	| 💚 	| 💚	| 💚	| 💚	|
+| UIActionSheet interaction 	| 💚 	| 💚 	| 💚 	| 💚 	|
+| UIPickerView interaction  	| 💚 	| 💛[⁴](#footnotes)	| 💚 	| 💚 	|
+| Swipe to delete           	| ❌ 	| ❌ 	| ❌ 	| 💚 	|
 
 ## Hybrid Apps
 
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
-|---------	|-------	|--------------	|------------	|-----	|----------	|
-| UIWebView interaction   	| ❌ 	| 💚 	| 💚 	| 💚 	|  	|
-| WKWebView interaction   	| ❌ 	| 💚 	| ❌[⁵](#footnotes) 	| ❌ 	|  	|
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
+|---------	|-------	|--------------	|------------	|-----	|
+| UIWebView interaction   	| ❌ 	| 💚 	| 💚 	| 💚 	|
+| WKWebView interaction   	| ❌ 	| 💚 	| ❌[⁵](#footnotes) 	| ❌ 	|
 
 ## External to App
 
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
-|---------	|-------	|--------------	|------------	|-----	|----------	|
-| Remote controllers          	| ❌ 	| 💚 	| ❌[⁵](#footnotes)	| ❌ 	|  	|
-| System UIAlertViews        	| ❌ 	| 💚 	| 💚	| ❌ 	|  	|
-| Backgrounding/foregrounding 	| ❌ 	| ❌ 	| ❌	| ❌ 	|  	|
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
+|---------	|-------	|--------------	|------------	|-----	|
+| Remote controllers          	| ❌ 	| 💚 	| ❌[⁵](#footnotes)	| ❌ 	|
+| System UIAlertViews        	| ❌ 	| 💚 	| 💚	| ❌ 	|
+| Backgrounding/foregrounding 	| ❌ 	| ❌ 	| ❌	| ❌ 	|
 
 
 ## Developer Niceties
 
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Calabash 	|
-|---------	|-------	|--------------	|------------	|-----	|----------	|
-| Objective-C                                 	| ❌ 	| ❌ 	| 💚 	| 💚 	|  	|
-| BDD-style                                   	| 💚 	| ❌  	| ❌ 	| ❌ 	|  	|
-| Can be debugged                            	| 💚 	| ❌  	| 💛[⁶](#footnotes)	| 💚 	|  	|
-| Does not require Instruments.app            	| 💚 	| ❌  	| ❌ 	| 💚 	|  	|
-| Focus tests                                 	| 💚 	| ❌    	| 💚 	| 💚[⁷](#footnotes) 	|  	|
-| Cocoapods support                           	| 💚 	| n/a 	| 💚 	| 💚 	|  	|
-| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁸](#footnotes) 	|  	|
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
+|---------	|-------	|--------------	|------------	|-----	|
+| Objective-C                                 	| ❌ 	| ❌ 	| 💚 	| 💚 	|
+| BDD-style                                   	| 💚 	| ❌  	| ❌ 	| ❌ 	|
+| Can be debugged                            	| 💚 	| ❌  	| 💛[⁶](#footnotes)	| 💚 	|
+| Does not require Instruments.app            	| 💚 	| ❌  	| ❌ 	| 💚 	|
+| Focus tests                                 	| 💚 	| ❌    	| 💚 	| 💚[⁷](#footnotes) 	|
+| Cocoapods support                           	| 💚 	| n/a 	| 💚 	| 💚 	|
+| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁸](#footnotes) 	|
 
 💚 = Full support
 💛 = Support with caveats
