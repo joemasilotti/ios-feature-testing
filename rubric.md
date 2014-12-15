@@ -17,7 +17,6 @@
 
 1. [Frank](http://www.testingwithfrank.com)
 1. [UIAutomation](https://developer.apple.com/library/ios/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/UsingtheAutomationInstrument/UsingtheAutomationInstrument.html)
-1. [Calabash](https://github.com/calabash/calabash-ios)
 1. [KIF](https://github.com/kif-framework/KIF)
 1. [Subliminal](https://github.com/inkling/Subliminal)
 1. [Zucchini](http://www.zucchiniframework.org)
@@ -34,8 +33,6 @@
 1. [frank-discuss](https://groups.google.com/forum/#!forum/frank-discuss) Google group is more of a knowledge base than an active discussion forum. Stack Overflow is lacking information on Frank.
 1. Frank is maintained so poorly we have considered forking it and maintaining it on our own. This, however, has improved since iOS 8 has launched.
 1. Frank claims to be able to run on devices but I haven't gotten it to work.
-
-### Calabash
 
 ### KIF
 
