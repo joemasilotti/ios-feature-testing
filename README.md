@@ -77,7 +77,7 @@ A more detailed look into the pros and cons of each framework.
 
 ### Frank
 
-1. Developer can target UI elements via css-like selectors. This frees the developer from having to know ahead of time the implementation of the view heirarchy.
+1. Developer can target UI elements via css-like selectors. This frees the developer from having to know ahead of time the implementation of the view hierarchy.
 1. Tests are written in Ruby with lots of Cucumber helper steps optionally available.
 1. There is a single command to "Frankify" the app, but CI setup takes more custom work.
 1. Some tests can become flaky if written poorly. Asynchronous behavior quickly becomes unreliable, especially with animations and chaining events.
@@ -100,6 +100,18 @@ A more detailed look into the pros and cons of each framework.
 1. There is a fair amount of talk online regarding UIAutomation and even a book from Pragmatic Bookshelf, [Test iOS Apps with UI Automation: Bug Hunting Made Easy](https://pragprog.com/book/jptios/test-ios-apps-with-ui-automation), covering how best to use.
 1. Apple owns it and it’s closed source. It doesn’t appear that any updates have occurred since iOS 6.
 1. Works but takes an extra couple of seconds to get installed on the device.
+
+### Subliminal
+
+1. Similar to KIF, all views are interacted with via their accessibility labels. Subliminal traverses the view hierarchy looking for each match, no knowledge the way the views are laid out is needed.
+1. Tests are written in Objective-C as subclasses of XCTest.
+1. While no issues are apparent in Subliminal itself, the tests are run through Instruments which carries its own slew of problems. See UIAutomation’s notes on Reliability for more information.
+1. Subliminal has the best coverage off all the frameworks, even better than UIAutomation itself. Most of the broken parts of UIAutomation have been patched (either in Objective-C or JavaScript directly) and work well. One of the few remaining limitations is lack of interaction with WKWebView.
+1. Beings it runs UIAutomation scrips under the hood, interaction should be as close to “real” user interaction as possible.
+1. Every public method is documented with expectations and parameters with full integration into Dash.
+1. Despite its shortcomings Subliminal seems to have the largest community of users. Twitter even [publicly acknowledged using it](https://twitter.com/JoinTheFlock/status/484163665336098816).
+1. There haven’t been many recent commits to master and the [Xcode 6 / iOS 8 branch](https://github.com/inkling/Subliminal/pull/259) has been open for almost six months.
+1. Subliminal claims to be able to run on devices but I haven't gotten it to work.
 
 ### KIF
 
