@@ -50,12 +50,12 @@ Comparison overview of each of the frameworks' features such as `UIControl` inte
 | Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
 |---------	|-------	|--------------	|------------	|-----	|
 | Objective-C                                 	| ❌ 	| ❌ 	| 💚 	| 💚 	|
-| BDD-style                                   	| 💚 	| ❌  	| ❌ 	| ❌ 	|
-| Can be debugged                            	| 💚 	| ❌  	| 💛[⁶](#footnotes)	| 💚 	|
+| BDD-style                                   	| 💚 	| ❌  	| ❌ 	| 💛[⁶](#footnotes) 	|
+| Can be debugged                            	| 💚 	| ❌  	| 💛[⁷](#footnotes)	| 💚 	|
 | Does not require Instruments.app            	| 💚 	| ❌  	| ❌ 	| 💚 	|
-| Focus tests                                 	| 💚 	| ❌    	| 💚 	| 💚[⁷](#footnotes) 	|
+| Focus tests                                 	| 💚 	| ❌    	| 💚 	| 💚[⁸](#footnotes) 	|
 | Cocoapods support                           	| 💚 	| n/a 	| 💚 	| 💚 	|
-| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁸](#footnotes) 	|
+| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁹](#footnotes) 	|
 
 💚 = Full support
 💛 = Support with caveats
@@ -133,9 +133,10 @@ A more detailed look into the pros and cons of each framework.
 * ³ Subliminal can slide a slider and successfully call delegate methods, but the computation of the physical nub offsets are left to you.
 * ⁴ UIAutomation makes each UIPicker selection on value at a time, making selection very slow. Also, if the date is not selectable UIAutomation will silently fail.\
 * ⁵ Subliminal cannot interact with these elements directly, but can call into UIAutomation’s JavaScripts via `SLTerminal -eval:`.
-* ⁶ Subliminal loops over Objective-C code which calls JavaScript asynchronously via Instruments making debugging possible, but quite difficult.
-* ⁷ Tests can be focused in Xcode via tapping the gutter (ala XCTest) but not via the command line.
-* ⁸ You can use the [Accessibility Inspector](https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) to identify elements for KIF to interact with, but there isn’t a direct way to view the hierarchy or identify elements which KIF ignores because they are accessibility containers.
+* ⁶ Kif itself isn't a BDD framework, but integrates seamlessly with BDD frameworks such as [Quick](https://github.com/Quick/Quick).
+* ⁷ Subliminal loops over Objective-C code which calls JavaScript asynchronously via Instruments making debugging possible, but quite difficult.
+* ⁸ Tests can be focused in Xcode via tapping the gutter (ala XCTest) but not via the command line.
+* ⁹ You can use the [Accessibility Inspector](https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) to identify elements for KIF to interact with, but there isn’t a direct way to view the hierarchy or identify elements which KIF ignores because they are accessibility containers.
 
 ## Versions
 
