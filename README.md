@@ -7,55 +7,55 @@ A comparison of the current iOS feature testing frameworks available.
 Comparison overview of each of the frameworks' features such as `UIControl` interaction, remote processes, and the ability to be run from the command line.
 
 ### Essential
- 
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
-|---------	|-------	|--------------	|------------	|-----	|
-| iOS 8+ support          	| 💚 	| 💚 	| 💚 	| 💚 	|
-| Run from CI             	| 💚 	| 💚 	| 💚 	| 💚 	|
-| Animation waiting       	| 💛[¹](#footnotes)	|    	| 💚  	| 💚  	|
+
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Appium
+|---------	|-------	|--------------	|------------	|-----	| ------
+| iOS 8+ support          	| 💚 	| 💚 	| 💚 	| 💚 	| 💚  |
+| Run from CI             	| 💚 	| 💚 	| 💚 	| 💚 	| 💚  |
+| Animation waiting       	| 💛[¹](#footnotes)	|    	| 💚  	| 💚  	| 💛[¹](#footnotes)  |
 
 ### UIKit Interactions
 
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
-|---------	|-------	|--------------	|------------	|-----	|
-| Reading UILabels         	| 💚	| 💚  	| 💚 	| 💚 	|
-| UITableView interaction   	| 💚   	| 💚 	| ❌ 	| 💚 	|
-| Scrolling UIScrollViews  	| 💚   	| 💚 	| 💚 	| 💚 	|
-| Standard UIAlertViews     	| 💚   	| 💚 	| ❌ 	| 💚 	| 
-| Typing into UITextFields   	| 💛[²](#footnotes) 	| 💚  	| 💚	| 💚	|
-| Tapping UIControls        	| 💚  	| 💚	| 💚	| 💚	|
-| Sliding UISliders         	| 💚 	| ❌	| 💛[³](#footnotes)	| 💚 	|
-| UIKit visibility          	| 💚 	| 💚	| 💚	| 💚	|
-| UIActionSheet interaction 	| 💚 	| 💚 	| 💚 	| 💚 	|
-| UIPickerView interaction  	| 💚 	| 💛[⁴](#footnotes)	| 💚 	| 💚 	|
-| Swipe to delete           	| ❌ 	| ❌ 	| ❌ 	| 💚 	|
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Appium  |
+|---------	|-------	|--------------	|------------	|-----	| ------  |
+| Reading UILabels         	| 💚	| 💚  	| 💚 	| 💚 	| 💚  |
+| UITableView interaction   	| 💚   	| 💚 	| ❌ 	| 💚 	| 💚  |
+| Scrolling UIScrollViews  	| 💚   	| 💚 	| 💚 	| 💚 	| 💚  |
+| Standard UIAlertViews     	| 💚   	| 💚 	| ❌ 	| 💚 	| 💚  |
+| Typing into UITextFields   	| 💛[²](#footnotes) 	| 💚  	| 💚	| 💚	| 💚  |
+| Tapping UIControls        	| 💚  	| 💚	| 💚	| 💚	| 💚  |
+| Sliding UISliders         	| 💚 	| ❌	| 💛[³](#footnotes)	| 💚 	| 💛[¹⁰](#footnotes)  |
+| UIKit visibility          	| 💚 	| 💚	| 💚	| 💚	| 💚  |
+| UIActionSheet interaction 	| 💚 	| 💚 	| 💚 	| 💚 	| 💚  |
+| UIPickerView interaction  	| 💚 	| 💛[⁴](#footnotes)	| 💚 	| 💚 	| 💛[⁴](#footnotes)  |
+| Swipe to delete           	| ❌ 	| ❌ 	| ❌ 	| 💚 	| 💚  |
 
 ### Hybrid Apps
 
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
-|---------	|-------	|--------------	|------------	|-----	|
-| UIWebView interaction   	| ❌ 	| 💚 	| 💚 	| 💚 	|
-| WKWebView interaction   	| ❌ 	| 💚 	| ❌[⁵](#footnotes) 	| ❌ 	|
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Appium  |
+|---------	|-------	|--------------	|------------	|-----	| ------  |
+| UIWebView interaction   	| ❌ 	| 💚 	| 💚 	| 💚 	| 💚  |
+| WKWebView interaction   	| ❌ 	| 💚 	| ❌[⁵](#footnotes) 	| ❌ 	| 💚  |
 
 ### External to App
 
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
-|---------	|-------	|--------------	|------------	|-----	|
-| Remote controllers          	| ❌ 	| 💚 	| ❌[⁵](#footnotes)	| ❌ 	|
-| System UIAlertViews        	| ❌ 	| 💚 	| ❌	| 💚 	|
-| Backgrounding/foregrounding 	| ❌ 	| ❌ 	| ❌	| ❌ 	|
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Appium  |
+|---------	|-------	|--------------	|------------	|-----	| ------  |
+| Remote controllers          	| ❌ 	| 💚 	| ❌[⁵](#footnotes)	| ❌ 	| 💚  |
+| System UIAlertViews        	| ❌ 	| 💚 	| ❌	| 💚 	| 💚  |
+| Backgrounding/foregrounding 	| ❌ 	| ❌ 	| ❌	| ❌ 	| ❌  |
 
 ### Developer Niceties
 
-| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	|
-|---------	|-------	|--------------	|------------	|-----	|
-| Objective-C                                 	| ❌ 	| ❌ 	| 💚 	| 💚 	|
-| BDD-style                                   	| 💚 	| ❌  	| ❌ 	| 💛[⁶](#footnotes) 	|
-| Can be debugged                            	| 💚 	| ❌  	| 💛[⁷](#footnotes)	| 💚 	|
-| Does not require Instruments.app            	| 💚 	| ❌  	| ❌ 	| 💚 	|
-| Focus tests                                 	| 💚 	| ❌    	| 💚 	| 💚[⁸](#footnotes) 	|
-| Cocoapods support                           	| 💚 	| n/a 	| 💚 	| 💚 	|
-| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁹](#footnotes) 	|
+| Feature 	| Frank 	| UIAutomation 	| Subliminal 	| KIF 	| Appium  |
+|---------	|-------	|--------------	|------------	|-----	| ------  |
+| Objective-C                                 	| ❌ 	| ❌ 	| 💚 	| 💚 	| 💚  |
+| BDD-style                                   	| 💚 	| ❌  	| ❌ 	| 💛[⁶](#footnotes) 	| 💚  |
+| Can be debugged                            	| 💚 	| ❌  	| 💛[⁷](#footnotes)	| 💚 	| 💚  |
+| Does not require Instruments.app            	| 💚 	| ❌  	| ❌ 	| 💚 	| ❌  |
+| Focus tests                                 	| 💚 	| ❌    	| 💚 	| 💚[⁸](#footnotes) 	| ❌  |
+| Cocoapods support                           	| 💚 	| n/a 	| 💚 	| 💚 	| ❌ |
+| Inspect view hierarchy from framework’s PoV 	| 💚 	| 💚  	| 💚 	| 💛[⁹](#footnotes) 	| 💚  |
 
 💚 = Full support
 💛 = Support with caveats
@@ -122,21 +122,39 @@ A more detailed look into the pros and cons of each framework.
 1. Similar to Frank, most user interactions are able to be reproduced. KIF still suffers from the same issues that plague Frank (e.g. it can’t interact with views outside of the app’s control). However, with recent additions it now can interact with system alerts (e.g. location services and photo authorization dialogs).
 1. Most (if not all) of KIF’s interaction boils down to create `UITouch` events at the right point and sending them to the app.
 1. Every public method is documented with expectations and parameters with full integration into Dash.
-1. There is a [Google Group](https://groups.google.com/forum/#!forum/kif-framework) which only gets about one post per week. The same goes for the official StackOverflow tag, [kif-framework](http://stackoverflow.com/questions/tagged/kif-framework). 
+1. There is a [Google Group](https://groups.google.com/forum/#!forum/kif-framework) which only gets about one post per week. The same goes for the official StackOverflow tag, [kif-framework](http://stackoverflow.com/questions/tagged/kif-framework).
 1. Framework is actively maintained with PRs being addressed within a few days of submission.
 1. Works for all cases except interacting with system alerts.
+
+### Appium
+1. Tests are written the same way as selenium tests, and are designed to provide the same wrapper for iOS and Android so users do not need to know about platform-specific details. Tests can be written using any testRunner or methodology.
+1. Tests can be written in *any* language (clients exist for Java, Swift, Python, Javascript, C#, Perl, PHP).
+1. Tests can be run programmatically and from the command line. Easy to integrate with CI.
+1. As of version 1.4.0 server is pretty reliable. Sometimes needs to be restarted if left running over hundreds of tests. Built on Instruments it comes will the bugs present in that tool.
+1. Coverage is a bit better than that of UIAutomation, since Appium adds functionality and also implements workarounds over known bugs.
+1. It's right there, as close as UIAutomation. Apps are not repackaged or wrapped for testing. Touch actions are actually simulated on the device.
+1. Documentation is currently very verbose and explanatory, but disorganized.
+1. Community is huge. Github issues are replied to usually same-day, and the www.discuss.appium.io forum has hundreds of users who are active daily.
+1. Appium releases happen about once a month. Github issues are tracked and critical bugs fixed right away. Users are encouraged to write pull requests to add features they request.
+1. Runs on physical devices (uses Instruments) with a few limitations, most notably:
+ - There is an Instruments-enforced one second delay between user commands.
+ - geolocation mocking doesn't work
+ - files cannot be pushed to and from the device
+ - safari alerts cannot be dismissed
+ - cannot set the locale/language
 
 #### Footnotes
 
 * ¹ Some animations are handled without interaction, while others require manual waiting.
 * ² Sometimes Frank is so eager to type, he doesn’t wait for the UITextField to fully focus, leading to dropped characters. Workarounds are possible.
 * ³ Subliminal can slide a slider and successfully call delegate methods, but the computation of the physical nub offsets are left to you.
-* ⁴ UIAutomation makes each UIPicker selection on value at a time, making selection very slow. Also, if the date is not selectable UIAutomation will silently fail.\
+* ⁴ UIAutomation makes each UIPicker selection on value at a time, making selection very slow. Also, if the date is not selectable UIAutomation will silently fail.
 * ⁵ Subliminal cannot interact with these elements directly, but can call into UIAutomation’s JavaScripts via `SLTerminal -eval:`.
 * ⁶ Kif itself isn't a BDD framework, but integrates seamlessly with BDD frameworks such as [Quick](https://github.com/Quick/Quick).
 * ⁷ Subliminal loops over Objective-C code which calls JavaScript asynchronously via Instruments making debugging possible, but quite difficult.
 * ⁸ Tests can be focused in Xcode via tapping the gutter (ala XCTest) but not via the command line.
 * ⁹ You can use the [Accessibility Inspector](https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) to identify elements for KIF to interact with, but there isn’t a direct way to view the hierarchy or identify elements which KIF ignores because they are accessibility containers.
+* ¹⁰ You can get the location of UISlider elements and create touch actions which manipulate them.
 
 ## Versions
 
@@ -145,3 +163,4 @@ A more detailed look into the pros and cons of each framework.
 * Frank 1.2.3
 * Subliminal 1.1.0 - [shared/Xcode6 branch - d99fef4 commit](https://github.com/inkling/Subliminal/commit/d99fef42529589373adc1948aede98aed0fbe9de)
 * KIF - 3.0.8
+* Appium - 1.4.6
